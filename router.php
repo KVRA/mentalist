@@ -16,7 +16,7 @@ class Router {
     function dispatch($uri, $method) {
         $uri = trim(parse_url($uri, PHP_URL_PATH) , '/');
         $method = strtoupper($method);
-        return $this->routes[$method][$uri]
+        return $this->routes[$method][$uri];
     }
 
 }
